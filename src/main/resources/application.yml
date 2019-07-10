@@ -1,0 +1,12 @@
+spring:
+    rabbitmq:
+      host: localhost
+      port: 5672
+      password: guest
+      username: guest
+      virtual-host: /
+      listener:
+        auto-startup: true
+server:
+  port: 8088
+  display-name: "yangkang"
