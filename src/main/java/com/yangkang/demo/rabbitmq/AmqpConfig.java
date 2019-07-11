@@ -12,6 +12,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
+/**
+ * @author Y10003453
+ */
 @EnableRabbit
 @Configuration
 public class AmqpConfig {

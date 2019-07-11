@@ -18,11 +18,8 @@ import org.springframework.stereotype.Component;
 public class Receiver {
     public Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    @Autowired
-    private RabbitTemplate template;
-
     @RabbitHandler
     public void process(String str){
-        System.out.println("消费者收到一条信息:  " + str);
+        logger.info("消费者收到一条信息:  " + str);
     }
 }
